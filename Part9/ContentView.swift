@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShowAlert = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+            } label: {
+                Text("アラートを表示")
+            }
         }
-        .padding()
     }
 }
 
